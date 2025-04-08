@@ -1,0 +1,38 @@
+{
+    "doctype": "DocType",
+    "name": "Checker",
+    "module": "Tijaabo",  
+    "custom": 1,
+    "fields": [
+        {
+            "label": "Title",
+            "fieldname": "title",
+            "fieldtype": "Data",
+            "reqd": 1
+        },
+        {
+            "label": "Description",
+            "fieldname": "description",
+            "fieldtype": "Link",
+            "options": "Hubi"
+        },
+        {
+            "label": "Due Date",
+            "fieldname": "due_date",
+            "fieldtype": "Date"
+        }
+    ],
+    "permissions": [
+        {
+            "role": "System Manager",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1
+        }
+    ],
+    "is_submittable": 0,
+    "istable": 0,
+    "track_changes": 0,
+    "naming_rule": "field: title"
+}
