@@ -2,39 +2,70 @@
  "actions": [],
  "allow_rename": 1,
  "autoname": "field:magac",
- "creation": "2025-04-12 14:02:48.402803",
+ "creation": "2025-04-12 16:03:09.011081",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "magac",
-  "column_break_hfqr",
-  "age"
+  "column_break_vryx",
+  "age",
+  "amended_from",
+  "section_break_wxmk",
+  "waalid",
+  "section_break_rcmd",
+  "fee"
  ],
  "fields": [
   {
-   "allow_in_quick_entry": 1,
    "fieldname": "magac",
    "fieldtype": "Data",
-   "in_list_view": 1,
    "label": "Magac",
    "unique": 1
   },
   {
-   "fieldname": "column_break_hfqr",
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "label": "Age"
+  },
+  {
+   "fieldname": "column_break_vryx",
    "fieldtype": "Column Break"
   },
   {
-   "allow_in_quick_entry": 1,
-   "fieldname": "age",
-   "fieldtype": "Int",
-   "in_list_view": 1,
-   "label": "Age"
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Tijaabo",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "section_break_wxmk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "waalid",
+   "fieldtype": "Table",
+   "label": "Waalid",
+   "options": "Waalid"
+  },
+  {
+   "fieldname": "section_break_rcmd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "fee",
+   "fieldtype": "Table",
+   "label": "Fee",
+   "options": "Fee"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-04-12 14:39:36.134529",
+ "modified": "2025-04-13 10:01:24.882480",
  "modified_by": "Administrator",
  "module": "Tijaabo",
  "name": "Tijaabo",
@@ -54,9 +85,9 @@
    "write": 1
   }
  ],
- "quick_entry": 1,
+ "route": "fill",
  "row_format": "Dynamic",
- "sort_field": "modified",
+ "sort_field": "creation",
  "sort_order": "DESC",
  "states": []
 }

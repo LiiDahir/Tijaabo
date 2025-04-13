@@ -1,0 +1,42 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-04-13 09:01:30.509990",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "magac",
+  "tel_phone"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "magac",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Magac"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "tel_phone",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Tel Phone"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-04-13 09:03:21.993309",
+ "modified_by": "Administrator",
+ "module": "Tijaabo",
+ "name": "Waalid",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

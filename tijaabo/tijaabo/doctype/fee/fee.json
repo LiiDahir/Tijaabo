@@ -1,0 +1,50 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-04-13 09:58:37.726348",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "month",
+  "fee",
+  "total"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "month",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Month"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "fee",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Fee"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-04-13 09:59:41.977542",
+ "modified_by": "Administrator",
+ "module": "Tijaabo",
+ "name": "Fee",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
