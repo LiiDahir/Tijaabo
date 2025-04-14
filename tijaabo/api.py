@@ -1,6 +1,7 @@
 import frappe,json
 from frappe.auth import LoginManager
 
+login_manager = LoginManager()
 session_expiry_time = ""
 
 @frappe.whitelist()
@@ -28,7 +29,6 @@ def get_data(token):
 def login(usr=None, pwd=None):
     """Authenticate user and set session expiry."""
     global session_expiry_time
-    login_manager = LoginManager()
     login_manager.authenticate(usr, pwd)
     login_manager.post_login()
 
@@ -54,7 +54,7 @@ def logout():
     """Logout user and clear session."""
     global session_expiry_time
     session_expiry_time = ""
-    frappe.local.login_manager.logout()
+    login_manager.logout()
     return {
         "message": "Logout successful"
 }
